@@ -1,26 +1,31 @@
 #include<iostream>
+#include<string>
 using namespace std;
-void ReverseString(int arr[],int size)
+string reverseString(string s)
 {
-    int start=0,end=size-1;
-    while(start<end)
+    int n=s.length();
+    int st=0,end=n-1;
+    while(st<end)
     {
-        swap(arr[start],arr[end]);
-        start++;
+       
+        swap(s[st],s[end]);
+        st++;
         end--;
     }
+    return s;
 }
 int main()
 {
-    int arr[]={4,2,7,8,1,2,9};
-    int size=7;
-
-  ReverseString(arr,size);
-
-for(int i=0;i<size;i++)
-{
-    cout<<arr[i]<<"\t";
-}
-cout<<endl;
-return 0;
+    string s;
+    cin>>s;
+    string s2=reverseString(s);
+    if(s2==s)
+    {
+        cout<<s2<<" Palendrone";
+    }
+    else
+    {
+        cout<<s2<<" Not Palindrone";
+    }
+    return 0;
 }

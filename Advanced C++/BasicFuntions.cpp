@@ -32,7 +32,8 @@ int fact(int n)           //Factorial Of Number
 }
 int main()
 { 
-    cout<<"Sum Of Two Numbers :"<<SumOfTwo(5,9)<<endl;  //Function 1
+
+  cout<<"Sum Of Two Numbers :"<<SumOfTwo(5,9)<<endl;  //Function 1
   cout<<"Min :"<<MinOfTwo(5,9)<<endl;                   //Function 2
   cout<<"Sum Of 1 to N Numbers :"<<SumOfNo(9)<<endl;    //Function 3
   cout<<"Factorial Of 9 :"<<fact(9)<<endl;              //Function 4
